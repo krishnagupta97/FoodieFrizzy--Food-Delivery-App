@@ -62,7 +62,7 @@ const PlaceOrder = () => {
                             razorpay_payment_id: response.razorpay_payment_id,
                             razorpay_signature: response.razorpay_signature,
                         });
-                        window.location.href = "https://foodiefrizzy-food-delivery-app-main.onrender.com/myorders";
+                        navigate("/myorders");
                     } catch (err) {
                         alert("Payment verification failed");
                         console.error(err);
