@@ -1,0 +1,36 @@
+.load-div {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.loader {
+  width: 48px;
+  height: 48px;
+  display: inline-block;
+  position: relative;
+  border-width: 3px 2px 3px 2px;
+  border-style: solid dotted solid dotted;
+  border-color: #1500ff rgba(96, 170, 255, 0.3) #000000 rgba(47, 47, 47, 0.3);
+  border-radius: 50%;
+  box-sizing: border-box;
+  animation: 1s rotate linear infinite;
+}
+.loader:before , .loader:after{
+  content: '';
+  top: 0;
+  left: 0;
+  position: absolute;
+  border: 10px solid transparent;
+  border-bottom-color:#000000;
+  transform: translate(-10px, 19px) rotate(-35deg);
+}
+.loader:after {
+  border-color: #1500ff #0000 #0000 #0000 ;
+  transform: translate(32px, 3px) rotate(-35deg);
+}
+ @keyframes rotate {
+  100%{    transform: rotate(360deg)}
+}

@@ -1,0 +1,142 @@
+.container {
+    z-index: 1;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #e8eeff;
+    padding: 20px;
+    box-sizing: border-box;
+    background-color: transparent;
+}
+
+.form-container {
+    width: 100%;
+    height: 60%;
+    max-width: 400px;
+    background-color: #ffffffdd;
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.btns {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 8px;
+    border: 1px solid black;
+    overflow: hidden;
+    margin-bottom: 20px;
+    background-color: white;
+}
+
+.btns button {
+    flex: 1;
+    padding: 10px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: 600;
+    transition: transform 0.3s, color 0.3s;
+}
+
+.btns .active {
+    text-decoration: underline;
+    color: #5776ff;
+}
+
+.btns .login-btn:hover, .btns .register-btn:hover {
+    transform: scale(1.1);
+    color: #5776ff;
+}
+
+.login-container, .register-container {
+    width: 100%;
+}
+
+.login-form, .register-form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.input-conatiner {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 15px;
+}
+
+.login-form .input-conatiner {
+    margin-top: 15%;
+    gap: 30px;
+}
+
+.inputbox {
+    width: 100%;
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid black;
+    background-color: #f9f8f8;
+}
+
+.btn-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.submit-btn button {
+    width: 100%;
+    padding: 10px;
+    border-radius: 8px;
+    background-color: #5776ff;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: bold;
+    color: white;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+form button:hover {
+    background-color: #3d5ae1;
+    transform: scale(1.05);
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .form-container {
+        width: 90%;
+    }
+
+    .btns {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .btns button {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+@media (max-width: 480px) {
+    input, form button {
+        font-size: 0.9rem;
+    }
+
+    .btns button {
+        font-size: 0.9rem;
+    }
+}
