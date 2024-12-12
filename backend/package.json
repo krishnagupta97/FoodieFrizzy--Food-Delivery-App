@@ -4,7 +4,8 @@
   "main": "server.js",
   "type": "module",
   "scripts": {
-    "server": "node server.js"
+    "server": "node server.js",
+    "build": "echo 'No build step defined'"
   },
   "author": "",
   "license": "ISC",
